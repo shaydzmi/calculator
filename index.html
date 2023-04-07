@@ -1,42 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Calculator</title>
-	<script>
-		function calculate() {
-			var b1 = parseFloat(document.getElementById("b1").value);
-			var b2 = parseFloat(document.getElementById("b2").value);
-			var b3 = parseFloat(document.getElementById("b3").value);
-			var b4 = parseFloat(document.getElementById("b4").value);
-			var b5 = parseFloat(document.getElementById("b5").value);
-			var result = (((b4/b3/10000)*b2*b1)**-1)*1000*b5;
-			document.getElementById("result").value = result;
-		}
-	</script>
+    <title>Calculator</title>
+    <script>
+        function calculate() {
+        	var b1 = parseFloat(document.getElementById("b1").value);
+        	var b2 = parseFloat(document.getElementById("b2").value);
+        	var b3 = parseFloat(document.getElementById("b3").value);
+        	var b4 = parseFloat(document.getElementById("b4").value);
+        	var b5 = parseFloat(document.getElementById("b5").value);
+        	var result = (((b4/b3/10000)*b2*b1)**-1)*1000*b5;
+        	document.getElementById("result").value = result;
+        }
+    </script>
 </head>
+
 <body>
-	<form>
-		<label for="b1">Feeders:</label>
-		<input type="text" id="b1" name="b1"><br><br>
-
-		<label for="b2">Needles:</label>
-		<input type="text" id="b2" name="b2"><br><br>
-
-		<label for="b3">Yarn:</label>
-		<input type="text" id="b3" name="b3"><br><br>
-
-		<label for="b4">LFA:</label>
-		<input type="text" id="b4" name="b4"><br><br>
-
-		<label for="b5">Weight:</label>
-		<input type="text" id="b5" name="b5"><br><br>
-
-		<input type="button" value="Calculate" onclick="calculate()">
-	</form>
-
-	<br>
-
-	<label for="result">Turns:</label>
-	<input type="text" id="result" name="result" readonly>
+    <form style="text-align: left;"><label for="b1"><strong>Feeders:&nbsp;</strong></label><input type="text" id="b1" name="b1"><br><br><label for="b2"><strong>Needles</strong>:&nbsp;</label> <input type="text" id="b2" name="b2"> عدد الإبر<br><br><label for="b3"><strong>Yarn</strong>: &nbsp; &nbsp; &nbsp;</label><input type="text" id="b3" name="b3"><br><br><label for="b4"><strong>LFA</strong>: &nbsp; &nbsp; &nbsp;&nbsp;</label><input type="text" id="b4" name="b4"><br><br><label for="b5"><strong>Weight</strong>:&nbsp;</label> <input type="text" id="b5" name="b5"><br><br> <input type="button" value="Calculate"></form>
+    <p><label for="result"><strong>Turns</strong>: &nbsp;</label><input type="text" id="result" name="result" readonly=""></p>
 </body>
+
 </html>
